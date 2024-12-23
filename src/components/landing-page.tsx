@@ -1,19 +1,12 @@
 import { FC } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 interface LandingPageProps {
   title: string;
   description: string;
-  imageSrc: string;
-  imageAlt: string;
 }
 
-const LandingPage: FC<LandingPageProps> = ({
-  // title,
-  description,
-  imageSrc,
-  imageAlt,
-}) => {
+const LandingPage: FC<LandingPageProps> = ({ title, description }) => {
   return (
     <div className="flex flex-row md:flex-row justify-between items-center min-h-screen bg-black">
       <div className="w-full md:w-1/2 p-8">
@@ -92,22 +85,13 @@ const LandingPage: FC<LandingPageProps> = ({
             </svg>
           </div>
           <h1 className="text-[2.75rem] md:text-[4.5rem] leading-[2.75rem] md:leading-[5.5rem] text-white font-bold font-[family-name:var(--font-satoshi)] mb-4 pl-3 pr-4">
-            Bringing Crypto to Africa
+            {title}
           </h1>
           <p className="text-xl tracking-wide text-white font-[family-name:var(--font-inter)] mb-6 pl-4 pr-2">
             {description}
           </p>
         </div>
       </div>
-      {/* <div className="w-full md:w-1/2 relative h-64 md:h-screen">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          fill
-          priority
-          className="object-cover"
-        />
-      </div> */}
     </div>
   );
 };
