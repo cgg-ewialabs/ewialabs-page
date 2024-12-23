@@ -18,10 +18,10 @@ const LandingPage: FC<LandingPageProps> = ({
     <div className="flex flex-row md:flex-row justify-between items-center min-h-screen bg-black">
       <div className="w-full md:w-1/2 p-8">
         <div className="flex flex-col justify-center h-full">
-          <div className="pl-4 pr-4 mb-4">
+          <div className="pl-4 mb-4">
             <svg
-              width="208px"
-              height="96px"
+              width="117px"
+              height="54px"
               viewBox="0 0 416 192"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -91,15 +91,15 @@ const LandingPage: FC<LandingPageProps> = ({
               </g>
             </svg>
           </div>
-          <h1 className="text-[3.75rem] md:text-[4.5rem] leading-[4.5rem] md:leading-[5.5rem] text-white font-bold font-[family-name:var(--font-satoshi)] mb-4 pl-3 pr-4">
+          <h1 className="text-[2.75rem] md:text-[4.5rem] leading-[2.75rem] md:leading-[5.5rem] text-white font-bold font-[family-name:var(--font-satoshi)] mb-4 pl-3 pr-4">
             Bringing Crypto to Africa
           </h1>
-          <p className="text-2xl text-white font-bold font-[family-name:var(--font-inter)] mb-6 pl-4 pr-4">
+          <p className="text-xl tracking-wide text-white font-[family-name:var(--font-inter)] mb-6 pl-4 pr-2">
             {description}
           </p>
         </div>
       </div>
-      <div className="w-full md:w-1/2 relative h-64 md:h-screen">
+      {/* <div className="w-full md:w-1/2 relative h-64 md:h-screen">
         <Image
           src={imageSrc}
           alt={imageAlt}
@@ -107,7 +107,7 @@ const LandingPage: FC<LandingPageProps> = ({
           priority
           className="object-cover"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
